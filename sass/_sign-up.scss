@@ -1,0 +1,147 @@
+.sign-up{
+  width: 50%;
+  margin: 3rem auto;
+  @media only screen and (max-width: 43.75em) {
+    width: 70%;
+  }
+  @media only screen and (max-width: 25em) {
+    width: 90%;
+  }
+  &__form{
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1.2rem rgba(0,0,0,.3);
+    padding: 2rem;
+  }
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon{
+    font-size: 3rem;
+    color: rgb(29, 161, 242);
+    text-align: center;
+  }
+
+  &__btn{
+    color: white;
+    padding: .5rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: rgb(29, 161, 242);
+    border-radius: 10rem;
+    border: 0;
+    margin: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,.4);
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  &__heading-2{
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__heading-3{
+    display: block;
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+  }
+
+  &__input{
+    font-size: 1.5rem;
+    width: 100%;
+    display: block;
+    padding: 0 1rem 2rem 1rem;
+    height: 6rem;
+    background-color: rgba(195, 195, 195, .2);
+    border: 0;
+    border-bottom: 2px solid rgb(101, 119, 134);
+    transition: all .3s;
+    margin-bottom: 3rem;
+    @media only screen and (max-width: 43.75em) {
+      background-color: rgba(195, 195, 195, .6);
+    }
+
+
+    &:focus{
+      outline: none;
+      box-shadow: 0 .5rem .8rem rgba(0,0,0,.3);
+      border-bottom:2px solid rgb(29, 161,242);
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgb(101, 119, 134);
+    }
+
+  }
+
+  &__input:focus::-webkit-input-placeholder{
+    color: rgb(29, 161,242);
+  }
+
+  &__link:link,
+  &__link:visited{
+    text-decoration: none;
+    color: rgb(29, 161, 242);
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    display: block;
+  }
+
+  &__text{
+    font-size: 1.5rem;
+    color: rgb(101, 119, 134);
+    margin-bottom: 2rem;
+  }
+
+  &__data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__dob{
+    font-size: 1.5rem;
+    padding: 0 1rem 2rem 1rem;
+    height: 6rem;
+    background-color: rgba(195, 195, 195, .2);
+    border: 0;
+    border-bottom: 2px solid rgb(101, 119, 134);
+    transition: all .3s;
+    margin-bottom: 3rem;
+    @media only screen and (max-width: 43.75em) {
+      background-color: rgba(195, 195, 195, .6);
+    }
+
+
+    &:focus{
+      outline: none;
+      box-shadow: 0 .5rem .8rem rgba(0,0,0,.3);
+      border-bottom:2px solid rgb(29, 161,242);
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgb(101, 119, 134);
+    }
+
+  }
+  &__dob:focus::-webkit-input-placeholder{
+    color: rgb(29, 161,242);
+  }
+
+}
+
+.month{
+  width: 40%;
+}
+.day{
+  width:  25%;
+}
+
+.year{
+  width:  30%;
+}

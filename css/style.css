@@ -51,7 +51,7 @@ body {
   margin-bottom: 3rem; }
   @media only screen and (max-width: 43.75em) {
     .main__icon {
-      margin-bottom: 2rem; } }
+      margin-bottom: 1.8rem; } }
 
 .main__text {
   font-size: 1.6rem;
@@ -157,12 +157,19 @@ body {
   font-weight: 600; }
 
 .log-in {
-  width: 70%;
-  margin: 1.8rem auto;
+  width: 40%;
+  margin: 4rem auto;
   text-align: center; }
+  @media only screen and (max-width: 43.75em) {
+    .log-in {
+      width: 60%; } }
   @media only screen and (max-width: 25em) {
     .log-in {
-      width: 90%; } }
+      width: 80%; } }
+  .log-in__container {
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1.2rem rgba(0, 0, 0, 0.3);
+    padding: 2rem; }
   .log-in__icon {
     display: inline-block;
     color: #1da1f2;
@@ -173,8 +180,8 @@ body {
     margin-bottom: 2rem; }
   .log-in__input {
     font-size: 1.5rem;
-    width: 58%;
-    margin: 0 24% 2rem 24%;
+    width: 100%;
+    margin-bottom: 2rem;
     display: block;
     padding: 0 1rem 2rem 1rem;
     height: 6rem;
@@ -195,8 +202,8 @@ body {
     color: #1da1f2; }
   .log-in__btn {
     border: 0;
-    width: 58%;
-    margin: 0 24% 3rem 24%;
+    width: 100%;
+    margin-bottom: 3rem;
     display: block;
     background-color: #1da1f2;
     padding: 1.3rem;
@@ -205,12 +212,122 @@ body {
     font-weight: 700;
     color: #fff;
     cursor: pointer; }
+  .log-in__btn:focus {
+    outline: none; }
   .log-in__link:link, .log-in__link:visited {
     text-decoration: none;
     display: inline-block;
     font-size: 1.6rem;
-    color: #1da1f2; }
+    color: #1da1f2;
+    border-bottom: 1px solid transparent; }
     .log-in__link:link:not(:last-child), .log-in__link:visited:not(:last-child) {
       margin-right: 1.5rem; }
   .log-in__link:hover, .log-in__link:visited {
     border-bottom: 1px solid currentColor; }
+
+.sign-up {
+  width: 50%;
+  margin: 3rem auto; }
+  @media only screen and (max-width: 43.75em) {
+    .sign-up {
+      width: 70%; } }
+  @media only screen and (max-width: 25em) {
+    .sign-up {
+      width: 90%; } }
+  .sign-up__form {
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1.2rem rgba(0, 0, 0, 0.3);
+    padding: 2rem; }
+  .sign-up__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .sign-up__icon {
+    font-size: 3rem;
+    color: #1da1f2;
+    text-align: center; }
+  .sign-up__btn {
+    color: white;
+    padding: .5rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: #1da1f2;
+    border-radius: 10rem;
+    border: 0;
+    margin: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4); }
+    .sign-up__btn:focus {
+      outline: none; }
+  .sign-up__heading-2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem; }
+  .sign-up__heading-3 {
+    display: block;
+    font-size: 1.7rem;
+    margin-bottom: .5rem; }
+  .sign-up__input {
+    font-size: 1.5rem;
+    width: 100%;
+    display: block;
+    padding: 0 1rem 2rem 1rem;
+    height: 6rem;
+    background-color: rgba(195, 195, 195, 0.2);
+    border: 0;
+    border-bottom: 2px solid #657786;
+    transition: all .3s;
+    margin-bottom: 3rem; }
+    @media only screen and (max-width: 43.75em) {
+      .sign-up__input {
+        background-color: rgba(195, 195, 195, 0.6); } }
+    .sign-up__input:focus {
+      outline: none;
+      box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.3);
+      border-bottom: 2px solid #1da1f2; }
+    .sign-up__input::-webkit-input-placeholder {
+      color: #657786; }
+  .sign-up__input:focus::-webkit-input-placeholder {
+    color: #1da1f2; }
+  .sign-up__link:link, .sign-up__link:visited {
+    text-decoration: none;
+    color: #1da1f2;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    display: block; }
+  .sign-up__text {
+    font-size: 1.5rem;
+    color: #657786;
+    margin-bottom: 2rem; }
+  .sign-up__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .sign-up__dob {
+    font-size: 1.5rem;
+    padding: 0 1rem 2rem 1rem;
+    height: 6rem;
+    background-color: rgba(195, 195, 195, 0.2);
+    border: 0;
+    border-bottom: 2px solid #657786;
+    transition: all .3s;
+    margin-bottom: 3rem; }
+    @media only screen and (max-width: 43.75em) {
+      .sign-up__dob {
+        background-color: rgba(195, 195, 195, 0.6); } }
+    .sign-up__dob:focus {
+      outline: none;
+      box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.3);
+      border-bottom: 2px solid #1da1f2; }
+    .sign-up__dob::-webkit-input-placeholder {
+      color: #657786; }
+  .sign-up__dob:focus::-webkit-input-placeholder {
+    color: #1da1f2; }
+
+.month {
+  width: 40%; }
+
+.day {
+  width: 25%; }
+
+.year {
+  width: 30%; }
