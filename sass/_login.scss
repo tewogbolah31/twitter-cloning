@@ -29,9 +29,14 @@
     border: 0;
     border-bottom: 2px solid rgb(101, 119, 134);
     transition: all .3s;
+    @media only screen and (max-width: 43.75em) {
+      background-color: rgba(195, 195, 195, .6);
+    }
+
 
     &:focus{
       outline: none;
+      box-shadow: 0 .5rem .8rem rgba(0,0,0,.3);
       border-bottom:2px solid rgb(29, 161,242);
     }
 

@@ -59,7 +59,7 @@ body {
   margin-bottom: 1.5rem; }
   @media only screen and (max-width: 43.75em) {
     .main__text {
-      margin-bottom: 1rem; } }
+      margin-bottom: 1.5rem; } }
 
 .heading__1 {
   font-size: 3rem;
@@ -83,10 +83,6 @@ body {
   width: 100%;
   border: 1px solid transparent;
   margin-bottom: 1.5rem; }
-  @media only screen and (max-width: 43.75em) {
-    .btn__sign-up:link,
-    .btn__sign-up:visited {
-      margin-bottom: 2rem; } }
 
 .btn__sign-up:hover,
 .btn__sign-up:active {
@@ -117,7 +113,7 @@ body {
   padding: 1.5rem 0; }
   @media only screen and (max-width: 43.75em) {
     .footer {
-      padding: 3rem 0 2rem 0; } }
+      padding: 3rem 1rem 2rem 1rem; } }
   .footer__list {
     list-style: none;
     display: flex;
@@ -186,8 +182,12 @@ body {
     border: 0;
     border-bottom: 2px solid #657786;
     transition: all .3s; }
+    @media only screen and (max-width: 43.75em) {
+      .log-in__input {
+        background-color: rgba(195, 195, 195, 0.6); } }
     .log-in__input:focus {
       outline: none;
+      box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.3);
       border-bottom: 2px solid #1da1f2; }
     .log-in__input::-webkit-input-placeholder {
       color: #657786; }

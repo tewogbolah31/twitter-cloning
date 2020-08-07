@@ -77,7 +77,7 @@ body{
     font-weight: 700;
     margin-bottom: 1.5rem;
     @media only screen and (max-width: 43.75em) {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
   }
 }
@@ -106,9 +106,6 @@ body{
   width: 100%;
   border: 1px solid transparent;
   margin-bottom: 1.5rem;
-  @media only screen and (max-width: 43.75em) {
-    margin-bottom: 2rem;
-  }
 }
 .btn__sign-up:hover,
 .btn__sign-up:active{
@@ -141,7 +138,7 @@ body{
 .footer{
   padding: 1.5rem 0;
   @media only screen and (max-width: 43.75em) {
-    padding: 3rem 0 2rem 0;
+    padding: 3rem 1rem 2rem 1rem;
   }
   &__list{
     list-style: none;
