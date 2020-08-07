@@ -1,0 +1,77 @@
+.log-in{
+  width: 70%;
+  margin: 1.8rem auto;
+  text-align: center;
+
+  @media only screen and (max-width: 25em) {
+    width: 90%;
+  }
+  &__icon{
+    display: inline-block;
+    color: rgb(29, 161, 242);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  &__heading{
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__input{
+    font-size: 1.5rem;
+    width: 58%;
+    margin: 0 24% 2rem 24%;
+    display: block;
+    padding: 0 1rem 2rem 1rem;
+    height: 6rem;
+    background-color: rgba(195, 195, 195, .1);
+    border: 0;
+    border-bottom: 2px solid rgb(101, 119, 134);
+    transition: all .3s;
+
+    &:focus{
+      outline: none;
+      border-bottom:2px solid rgb(29, 161,242);
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgb(101, 119, 134);
+    }
+  }
+
+  &__input:focus::-webkit-input-placeholder{
+    color: rgb(29, 161,242);
+  }
+
+  &__btn{
+    border: 0;
+    width: 58%;
+    margin: 0 24% 3rem 24%;
+    display: block;
+    background-color: rgba(29, 161, 242, 0.5);
+    padding: 1.3rem;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__link:link,
+  &__link:visited{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    color: rgb(29, 161,242);
+
+    &:not(:last-child){
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link:hover,
+  &__link:visited{
+    border-bottom: 1px solid currentColor;
+  }
+
+}
