@@ -107,7 +107,7 @@ body{
   border: 1px solid transparent;
   margin-bottom: 1.5rem;
   @media only screen and (max-width: 43.75em) {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 .btn__sign-up:hover,
@@ -182,10 +182,6 @@ body{
 
     &:not(:last-child){
       margin-bottom: 4rem;
-
-      @media only screen and (max-width: 43.75em) {
-        margin-bottom: 3rem;
-      }
     }
   }
 
@@ -196,7 +192,8 @@ body{
     margin-right: 2rem;
   }
 
-  &__link{
+  &__link:link,
+  &__link:visited{
     text-decoration: none;
     font-size: 2.1rem;
     color: #fff;
