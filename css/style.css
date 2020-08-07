@@ -26,7 +26,8 @@ body {
   display: flex; }
   @media only screen and (max-width: 43.75em) {
     .header {
-      flex-direction: column-reverse; } }
+      flex-direction: column-reverse;
+      height: 100vh; } }
   .header__side {
     height: 100%;
     flex: 0 0 50%;
@@ -51,7 +52,10 @@ body {
   margin-bottom: 3rem; }
   @media only screen and (max-width: 43.75em) {
     .main__icon {
-      margin-bottom: 1.8rem; } }
+      margin-bottom: 2rem; } }
+  @media only screen and (max-width: 25em) {
+    .main__icon {
+      margin-bottom: 1rem; } }
 
 .main__text {
   font-size: 1.6rem;
@@ -68,6 +72,9 @@ body {
   @media only screen and (max-width: 43.75em) {
     .heading__1 {
       margin-bottom: 4rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading__1 {
+      margin-bottom: 2.8rem; } }
 
 .btn__sign-up:link,
 .btn__sign-up:visited {
